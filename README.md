@@ -2,14 +2,14 @@
 Sparsity-Aware OCT Volumetric Data Restoration Using Optical Synthesis Model
 
 ====================================================================
-This ZIP file contains supplemental materials for paper
-"Sparsit-Aware OCT Volumetric Data Restoration Using an Optical Synthesis
+This repository contains supplemental materials for paper
+"Sparsit-Aware OCT Volumetric Data Restoration Using Optical Synthesis
  Model," written by R. Kobayashi et al.
 ====================================================================
 
 a) Description:
 
-   This ZIP file contains MATLAB script, function and class definition
+   This repository contains MATLAB script, function and class definition
    codes so that readers can reproduce the following materials in the
    paper:
 
