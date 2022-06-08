@@ -2,8 +2,8 @@
 
 This repository contains supplemental materials for paper
 
-R. Kobayashi et al., "Sparsity-Aware OCT Volumetric Data Restoration 
-Using Optical Synthesis Model," 
+Ruiki Kobayashi, Genki Fujii, Yuta Yoshida, Takeru Ota, Fumiaki Nin, Hiroshi Hibino, Samuel Choi, Shunsuke Ono, Shogo Muramatsu,
+"Sparsity-Aware OCT Volumetric Data Restoration Using Optical Synthesis Model," 
 IEEE Trans. on Computational Imaging, 2022 to appear
 
 ## Description:
