@@ -3,7 +3,7 @@
 % 
 % This script is an experiment with real data of interference waveform estimation.
 % 
-% The results are stored in folder "./results" as follows:
+% The results are stored in folder "../results" as follows:
 %% 
 % * ObsData: the observed data, adjusted for sampling and stripped of DC components
 % * EstData: Estimated glass data.
@@ -34,10 +34,10 @@
 % http://msiplab.eng.niigata-u.ac.jp/
 %% Initial setting
 
-S = load('./materials/glass1.mat','ObsData');
+S = load('../data/materials/glass1.mat','ObsData');
 ObsData = S.ObsData;
 dtsa = "2022-04-14-11-45";
-S = load("./materials/exp_smpadj_"+dtsa+"/adjustFunc","depthEst");
+S = load("../data/materials/exp_smpadj_"+dtsa+"/adjustFunc","depthEst");
 depthEst = S.depthEst;
 disp(depthEst)
 pSigmaxy = 0.5; 
@@ -51,7 +51,7 @@ mymse = @(x,y) norm(x(:)-y(:),2)^2/numel(x);
 
 %
 dt = char(datetime('now','TimeZone','local','Format','yyyy-MM-dd-HH-mm'));
-targetdir = "./results/exp_wave_" + dt;
+targetdir = "../results/exp_wave_" + dt;
 if exist(targetdir,'dir') ~= 7
     mkdir(targetdir)
 end

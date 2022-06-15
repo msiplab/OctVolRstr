@@ -2,7 +2,7 @@
 % 
 % 
 % This script examines the effect of parameter choices through simulation. The 
-% results are stored in folder "./results" as follows:
+% results are stored in folder "../results" as follows:
 % 
 % 
 % 
@@ -263,7 +263,7 @@ end
 %% Store results
 
 t = char(datetime('now','Format','yyyy-MM-dd-HH-mm'));
-save(['./results/sweepparams1d-' t],...
+save(['../results/sweepparams1d-' t],...
     'tbPropPds','tbPropAdmm','tbRef1dtv',...
     'configs_proppds','configs_propadmm','configs_ref1dtv',...
     'msrparams');

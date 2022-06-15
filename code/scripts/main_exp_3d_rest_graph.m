@@ -3,7 +3,7 @@
 % 
 % The results are load from
 %% 
-% * ./results/exp_restore_yyyy-MM-dd-HH-mm.mat
+% * ../results/exp_restore_yyyy-MM-dd-HH-mm.mat
 %% 
 % Requirements: MATLAB R2022a
 % 
@@ -25,7 +25,7 @@
 
 % Filenames
 dtres = "2022-04-16-18-18";
-targetdir = "./materials/exp_restore_"+dtres;
+targetdir = "../data/materials/exp_restore_"+dtres;
 disp(targetdir)
  
 %
@@ -40,7 +40,7 @@ vsgamma = 0.5;
 %% Experimental results of restoration 
 
 % Filename for output figures
-rfigname = @(x,y) "./results/fig"+num2str(x)+string(char(96+y))+"rev.png";
+rfigname = @(x,y) "../results/fig"+num2str(x)+string(char(96+y))+"rev.png";
 
 %%
 % Filename for read

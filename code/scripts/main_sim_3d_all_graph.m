@@ -3,8 +3,8 @@
 % 
 % The results are load from
 %% 
-% * ./results/sim_clg_yyyy-MM-dd-HH-mm-lv-#-slope-#-dfreq-#.mat
-% * ./results/sim_results_dd-MM-yyy-HH-mm.mat
+% * ../results/sim_clg_yyyy-MM-dd-HH-mm-lv-#-slope-#-dfreq-#.mat
+% * ../results/sim_results_dd-MM-yyy-HH-mm.mat
 %% 
 % Requirements: MATLAB R2022a
 % 
@@ -68,7 +68,7 @@ ax.FontSize = 24;
 ax.XTick = [-5 0 5];
 ax.YTick = [-5 0 5];
 ax.ZTick = [0 0.5 1];
-exportgraphics(ax,"./results/fig2arev.png","Resolution",300);
+exportgraphics(ax,"../results/fig2arev.png","Resolution",300);
 close(hfig)
 % Y-Z sline
 hfig = figure;
@@ -83,7 +83,7 @@ ax.XTick = [-5 0 5];
 ax.YTick = [-20 0 20];
 ax.ZTick = [-1 0 1];
 ax.YLim = [-37 37];
-exportgraphics(ax,"./results/fig2brev.png","Resolution",300);
+exportgraphics(ax,"../results/fig2brev.png","Resolution",300);
 close(hfig)
 % Z only
 hfig = figure;
@@ -99,11 +99,11 @@ ax.YTick = [-1 -0.5 0 0.5 1];
 ax.XLim = [-37 37];
 ax.YLim = [-1 1];
 ax.DataAspectRatio = [25 1 1];
-exportgraphics(ax,"./results/fig2crev.png","Resolution",300);
+exportgraphics(ax,"../results/fig2crev.png","Resolution",300);
 close(hfig)
 %% Load simulation configurations
 
-targetdir = "./materials/sim_results_" + dtres;
+targetdir = "../data/materials/sim_results_" + dtres;
 cfilename = targetdir + "/tables";
 disp(cfilename)
 S = load(cfilename,"tbEvals","tbSimConfs");
@@ -116,7 +116,7 @@ slope = 0;
 depthfactor = [0.5 2 3];
 
 %
-tfigname = @(x) "./results/fig8"+string(char(96+x))+"rev.png";
+tfigname = @(x) "../results/fig8"+string(char(96+x))+"rev.png";
 
 %
 len = 100;
@@ -125,7 +125,7 @@ config_.len = len;
 config_.div = 150;
 isubfig = 1;
 for depthFreq = depthfactor
-    targetdir = "./materials/sim_clg_" +dtclg...
+    targetdir = "../data/materials/sim_clg_" +dtclg...
         +"-sgmw-"+num2str(sigmaw)...
         +"-slope-"+num2str(slope)...
         +"-dfreq-"+num2str(depthFreq)
@@ -170,11 +170,11 @@ slopefactor = [0 0.25 0.5];
 dfreq = 2;
 
 %
-gfigname = @(x) "./results/fig9"+string(char(96+x))+"rev.png";
+gfigname = @(x) "../results/fig9"+string(char(96+x))+"rev.png";
 
 isubfig = 1;
 for slope = slopefactor
-    targetdir = "./materials/sim_clg_" +dtclg...
+    targetdir = "../data/materials/sim_clg_" +dtclg...
         +"-sgmw-"+num2str(sigmaw)...
         +"-slope-"+num2str(slope)...
         +"-dfreq-"+num2str(dfreq)
@@ -221,11 +221,11 @@ dfreq = 2;
 rScale = 0.04;
 vScale = 0.2;
 %
-rfigname = @(x) "./results/fig11"+string(char(96+x))+"rev.png";
+rfigname = @(x) "../results/fig11"+string(char(96+x))+"rev.png";
 mymse = @(x,y) (norm(x(:)-y(:)).^2)/numel(x);
 isubfig = 1;
 for sigmaw = sigmawSet
-    targetdir = "./materials/sim_clg_" +dtclg...
+    targetdir = "../data/materials/sim_clg_" +dtclg...
         +"-sgmw-"+num2str(sigmaw)...
         +"-slope-"+num2str(slope)...
         +"-dfreq-"+num2str(dfreq)

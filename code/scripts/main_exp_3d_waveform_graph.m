@@ -34,7 +34,7 @@
 % http://msiplab.eng.niigata-u.ac.jp/
 
 dt = "2022-04-15-15-47";
-targetdir = "./materials/exp_wave_" + dt;
+targetdir = "../data/materials/exp_wave_" + dt;
 
 %
 wfigname = @(x) "./results/fig13"+string(char(96+x))+"rev.png";

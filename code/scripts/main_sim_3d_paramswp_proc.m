@@ -3,7 +3,7 @@
 % 
 % This script searchs for the best lambda and eta for restoration
 % 
-% The results are stored in folder "./results" as follows:
+% The results are stored in folder "../results" as follows:
 %% 
 % * graph: Error evaluation of lambda and eta for each tree level
 %% 
@@ -193,7 +193,7 @@ for iLv = minLevel:maxLevel
     config.obsSize = obsSize;
 
     t = char(datetime('now','Format','yyyy-MM-dd-HH-mm'));
-    save(['./results/graph-' num2str(nSet) '-level-' num2str(iLv) '-' t],...
+    save(['../results/graph-' num2str(nSet) '-level-' num2str(iLv) '-' t],...
         'graph','gammas','nSet','nLambdaSet','nEtaSet','mu','gamma1','config')
     
 end

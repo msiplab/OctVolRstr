@@ -3,7 +3,7 @@
 % 
 % This script performs the volumetric restoration on real data
 % 
-% The results are stored in folder "./results" as follows:
+% The results are stored in folder "../results" as follows:
 % 
 % exp_restore_yyyy-MM-dd-HH-mm.mat
 %% 
@@ -91,9 +91,9 @@ phiMode   = 'Linear';
 %phiMode   = 'Reflection';
 %% Waveform setting
 
-%load('./materials/theta'); % TODO
+%load('../data/materials/theta'); % TODO
 dtwv = "2022-04-15-15-47";
-S = load("./materials/exp_wave_"+dtwv+"/glass_exp","theta");
+S = load("../data/materials/exp_wave_"+dtwv+"/glass_exp","theta");
 theta = S.theta
 pScale = theta(1);
 pSigmaxy = theta(2);
@@ -118,7 +118,7 @@ catch
 end
 %% Observation
 
-S = load('./materials/mouse');
+S = load('../data/materials/mouse');
 aObs = S.A;
 clear S;
 %%
@@ -180,7 +180,7 @@ end
 
 % Data store
 dt = char(datetime('now','TimeZone','local','Format','yyyy-MM-dd-HH-mm'));
-targetdir = "./results/exp_restore_" + dt;
+targetdir = "../results/exp_restore_" + dt;
 if exist(targetdir,'dir') ~= 7
     mkdir(targetdir)
 end

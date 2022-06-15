@@ -830,8 +830,8 @@ hax = hplt.Parent;
 hax.FontSize = 10;
 hax.LineWidth = 1;
 
-%print(hfig,'./results/figonvergence','-dpng')
-exportgraphics(hfig,'./results/fig6arev.png','Resolution',300) 
+%print(hfig,'../results/figonvergence','-dpng')
+exportgraphics(hfig,'../results/fig6arev.png','Resolution',300) 
 close(hfig)
 % Estimation results 
 
@@ -851,7 +851,7 @@ xlabel('$n_\mathrm{z}$','Interpreter','latex')
 ylabel('$u[n_\mathrm{z}]$','Interpreter','latex')
 %grid on
 hax = gca;
-exportgraphics(hax,'./results/fig5arev.png','Resolution',300) 
+exportgraphics(hax,'../results/fig5arev.png','Resolution',300) 
 
 % r
 subplot(4,2,2)
@@ -862,7 +862,7 @@ xlabel('$n_\mathrm{z}$','Interpreter','latex')
 ylabel('$r[n_\mathrm{z}]$','Interpreter','latex')
 %grid on
 hax = gca;
-exportgraphics(hax,'./results/fig5brev.png','Resolution',300) 
+exportgraphics(hax,'../results/fig5brev.png','Resolution',300) 
 
 % v 
 subplot(4,2,3)
@@ -873,7 +873,7 @@ xlabel('$n_\mathrm{z}$','Interpreter','latex')
 ylabel('$v[n_\mathrm{z}]$','Interpreter','latex')
 %grid on
 hax = gca;
-exportgraphics(hax,'./results/fig5crev.png','Resolution',300) 
+exportgraphics(hax,'../results/fig5crev.png','Resolution',300) 
 
 % hr_refpds
 subplot(4,2,4)
@@ -888,7 +888,7 @@ hold on
 plot(r,'-.')
 hold off
 hax = gca;
-exportgraphics(hax,'./results/fig5drev.png','Resolution',300) 
+exportgraphics(hax,'../results/fig5drev.png','Resolution',300) 
 
 % hu_proppds 
 subplot(4,2,5)
@@ -902,7 +902,7 @@ hold on
 plot(u,'-.')
 hold off
 hax = gca;
-exportgraphics(hax,'./results/fig5erev.png','Resolution',300) 
+exportgraphics(hax,'../results/fig5erev.png','Resolution',300) 
 
 % hr_proppds
 subplot(4,2,6)
@@ -917,7 +917,7 @@ hold on
 plot(r,'-.')
 hold off
 hax = gca;
-exportgraphics(hax,'./results/fig5frev.png','Resolution',300) 
+exportgraphics(hax,'../results/fig5frev.png','Resolution',300) 
 
 % hu_propadmm 
 subplot(4,2,7)
@@ -931,7 +931,7 @@ hold on
 plot(u,'-.')
 hold off
 hax = gca;
-exportgraphics(hax,'./results/fig5grev.png','Resolution',300) 
+exportgraphics(hax,'../results/fig5grev.png','Resolution',300) 
 
 % hr_propadmm
 subplot(4,2,8)
@@ -946,7 +946,7 @@ hold on
 plot(r,'-.')
 hold off
 hax = gca;
-exportgraphics(hax,'./results/fig5hrev.png','Resolution',300) 
+exportgraphics(hax,'../results/fig5hrev.png','Resolution',300) 
 
 % Processing time
 
@@ -976,14 +976,14 @@ hax = hb.Parent;
 hax.XLim = [0 max(hb(2).YEndPoints)+1.6e-3];
 hax.LineWidth = 1;
 grid on
-exportgraphics(hfig,'./results/fig6brev.png','Resolution',300) 
+exportgraphics(hfig,'../results/fig6brev.png','Resolution',300) 
 close(hfig)
 % Information in LaTeX format
 
 capstr = "";
 capstr = capstr.append("\# of tree levels is " + num2str(nLevels) + newline);
 capstr = capstr.append("$\sigma_\mathrm{w} = " + num2str(sigmaw) + "$"+ newline);
-fid = fopen("./results/caption.tex","w");
+fid = fopen("../results/caption.tex","w");
 fwrite(fid,capstr);
 fclose(fid);
 

@@ -2,7 +2,7 @@
 % 
 % 
 % This script runs all simulations of the proposed method at once. The results 
-% are stored in folder "./results" as follows:
+% are stored in folder "../results" as follows:
 % 
 % results_sim
 %% 
@@ -65,7 +65,7 @@ dtpswp = "2022-04-13-07-55";
 filename = "graph-" + num2str(nSet) + "-level-" + num2str(iLv) + "-" + dtpswp;
 disp(filename)
 % Load result
-S = load("./materials/" + filename,'graph','gammas','config');
+S = load("../data/materials/" + filename,'graph','gammas','config');
 graph = S.graph;
 gammas = S.gammas;
 config = S.config;
@@ -770,8 +770,8 @@ parfor(iSimulation = 1:nSims, nWorkers_)
 %%
     % Store results
     %dt = char(datetime('now','TimeZone','local','Format','d-MM-y-HH-mm'));
-    %targetdir = ['./results/sim_clg_' dt 'lv-' char(string(sigmaw)) '-slope-' char(string(slope)) '-dfreq-' char(string(depthFreq))];
-    targetdir = "./results/sim_clg_" +timestamp+"-sgmw-"+num2str(sigmaw)+"-slope-"+num2str(slope)+"-dfreq-"+num2str(depthFreq);
+    %targetdir = ['../results/sim_clg_' dt 'lv-' char(string(sigmaw)) '-slope-' char(string(slope)) '-dfreq-' char(string(depthFreq))];
+    targetdir = "../results/sim_clg_" +timestamp+"-sgmw-"+num2str(sigmaw)+"-slope-"+num2str(slope)+"-dfreq-"+num2str(depthFreq);
     if exist(targetdir,'dir') ~= 7
         mkdir(targetdir)
     end
@@ -816,7 +816,7 @@ end
 %% Store summary of simulation
 
 timestamp = char(datetime('now','TimeZone','local','Format','yyyy-MM-dd-HH-mm'));
-targetdir = "./results/sim_results_" +timestamp;
+targetdir = "../results/sim_results_" +timestamp;
 if exist(targetdir,'dir') ~= 7
     mkdir(targetdir)
 end

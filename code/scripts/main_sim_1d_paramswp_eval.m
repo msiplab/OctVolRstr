@@ -5,14 +5,14 @@
 % 
 % The results are load from 
 %% 
-% * ./results/sweepparams1d-yyyy-MM-dd-HH-mm.mat
+% * ../results/sweepparams1d-yyyy-MM-dd-HH-mm.mat
 %% 
 % which contains
 %% 
 % * tables: 'tbPropPds','tbPropAdmm','tbRef1dtv'
 % * cells:  'configs_proppds','configs_propadmm','configs_ref1dtv'
 %% 
-% and some materials are stored in folder "./results".
+% and some materials are stored in folder "../results".
 % 
 % 
 % 
@@ -38,7 +38,7 @@
 
 %
 dt = "2022-03-31-09-31";
-filename =  "./materials/sweepparams1d-" + dt;
+filename =  "../data/materials/sweepparams1d-" + dt;
 disp(filename)
 S = load(filename,...
     'tbPropPds','tbPropAdmm','tbRef1dtv',...
@@ -153,8 +153,8 @@ end
 %% Materials
 % Create table of simulation specifications and output 
 %% 
-% * "./results/tablespec.tex" 
-% * "./results/tablemse.tex"
+% * "../results/tablespec.tex" 
+% * "../results/tablemse.tex"
 %% 
 % Parameters
 
@@ -297,7 +297,7 @@ spectbl = spectbl.append("\end{tabular}"+newline);
 %% 
 % Write
 
-fid = fopen('./results/tab1rev.tex','w');
+fid = fopen('../results/tab1rev.tex','w');
 fwrite(fid,spectbl);
 fclose(fid);
 %% 
@@ -403,7 +403,7 @@ msetbl = msetbl.append("\renewcommand{\arraystretch}{1.0}");
 %% 
 % Write
 
-fid = fopen('./results/tab2rev.tex','w');
+fid = fopen('../results/tab2rev.tex','w');
 fwrite(fid,msetbl);
 fclose(fid);
 %% Functions

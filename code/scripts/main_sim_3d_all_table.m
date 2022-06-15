@@ -3,7 +3,7 @@
 % 
 % The results are load from
 %% 
-% * ./results/sim_results_dd-MM-yyy-HH-mm.mat
+% * ../results/sim_results_dd-MM-yyy-HH-mm.mat
 %% 
 % Requirements: MATLAB R2022a
 % 
@@ -27,7 +27,7 @@
 dtres = "2022-04-14-19-41";
 %% Load simulation configurations
 
-targetdir = "./materials/sim_results_" + dtres;
+targetdir = "../data/materials/sim_results_" + dtres;
 cfilename = targetdir + "/tables";
 S = load(cfilename,"tbEvals","tbSimConfs");
 tbEvals = S.tbEvals;
@@ -57,7 +57,7 @@ end
 taba = taba.append("\end{tabular}"+newline);
 disp(taba)
 %
-fid = fopen('./results/tab3arev.tex','w');
+fid = fopen('../results/tab3arev.tex','w');
 fwrite(fid,taba);
 fclose(fid);
 %%
@@ -73,6 +73,6 @@ end
 tabb = tabb.append("\end{tabular}"+newline);
 disp(tabb)
 %
-fid = fopen('./results/tab3brev.tex','w');
+fid = fopen('../results/tab3brev.tex','w');
 fwrite(fid,tabb);
 fclose(fid);

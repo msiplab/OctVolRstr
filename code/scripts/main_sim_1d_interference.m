@@ -72,19 +72,19 @@ hold off
 viewhandle_(hfig)
 legend({['$b_\mathrm{p} = $' num2str(b_p,'%4.2f')],['$b_\mathrm{p} = $' num2str(2*b_p,'%4.2f')]},'Location','best','Interpreter','latex')
 %%
-%print(hfig,'./results/figpz','-dpng','-r',300)
-exportgraphics(hfig,'./results/fig3rev.png','Resolution',300) 
+%print(hfig,'../results/figpz','-dpng','-r',300)
+exportgraphics(hfig,'../results/fig3rev.png','Resolution',300) 
 close(hfig)
 %{
 subplot(3,1,1)
 ax = gca;
-exportgraphics(ax,'./results/figpza.png','Resolution',300) 
+exportgraphics(ax,'../results/figpza.png','Resolution',300) 
 subplot(3,1,2)
 ax = gca;
-exportgraphics(ax,'./results/figpzb.png','Resolution',300) 
+exportgraphics(ax,'../results/figpzb.png','Resolution',300) 
 subplot(3,1,3)
 ax = gca;
-exportgraphics(ax,'./results/figpzc.png','Resolution',300) 
+exportgraphics(ax,'../results/figpzc.png','Resolution',300) 
 %}
 %% Relation between refractive index and reflection 
 % $$R=\frac{|\mathfrak{n}_1-\mathfrak{n}_2|(\mathfrak{n}_1-\mathfrak{n}_2)}{(\mathfrak{n}_1+\mathfrak{n}_2)^2},\ 
@@ -132,7 +132,7 @@ v = circshift(cconv(rdist,irp,length(rdist)),-floor(length(irp)/2));
 plot(zeta,v,'LineWidth',1)
 axis([-2*hlen 2*hlen -1 1])
 axis off
-print(hfig,'./results/rid2rd','-dpng')
+print(hfig,'../results/rid2rd','-dpng')
 %% Function for handling figures
 
 function viewhandle_(hfig)

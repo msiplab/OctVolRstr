@@ -1,7 +1,7 @@
 %% MAIN_EXP_3D_SAMPLING_ADJUST: Sampling adjustment experiments
 % This script performs the sampling adjustment on real data
 % 
-% The results are stored in folder "./results" as follows:
+% The results are stored in folder "../results" as follows:
 %% 
 % * adjustFunc: Variable for the frequency adjustment obtained.
 %% 
@@ -30,7 +30,7 @@
 % 
 %% Initial setting
 
-S = load('./materials/tape.mat','ObsData');
+S = load('../data/materials/tape.mat','ObsData');
 ObsData = S.ObsData;
 [obsx,obsy,obsz] = size(ObsData);
 obsz
@@ -76,7 +76,7 @@ disp(depthEst)
 %% Store results
 
 dt = char(datetime('now','TimeZone','local','Format','yyyy-MM-dd-HH-mm'));
-targetdir = "./results/exp_smpadj_" + dt;
+targetdir = "../results/exp_smpadj_" + dt;
 if exist(targetdir,'dir') ~= 7
     mkdir(targetdir)
 end
@@ -86,7 +86,7 @@ save(targetdir + "/adjustFunc",'funcEst','depthEst');
 tEst = support.fcn_resampling(ObsData,funcEst,0);
 %% Display results and generate figures
 
-tfigname = @(x) "./results/fig12"+string(char(96+x))+"rev.png";
+tfigname = @(x) "../results/fig12"+string(char(96+x))+"rev.png";
 config_.win = win;
 config_.len = len;
 config_.obsz = obsz;

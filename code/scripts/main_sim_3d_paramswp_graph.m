@@ -3,7 +3,7 @@
 % 
 % This script draws a graph of estimation error evaluation vs (λ,η)
 % 
-% The results are load from folder "./results"
+% The results are load from folder "../results"
 % 
 % 
 % 
@@ -31,7 +31,7 @@ t = "2022-04-13-07-55";
 %
 filename = "graph-" + num2str(nSet) + "-level-" + num2str(iLv) + "-" + t;
 % Load result
-S = load("./materials/" + filename,...
+S = load("../data/materials/" + filename,...
     'graph','gammas','nSet','nEtaSet','mu','gamma1','config');
 graph = S.graph;
 nSet = S.nSet;
@@ -75,9 +75,9 @@ plot3(graph(m,3),graph(m,2),1,'*','Color','white')
 grid off
 axis([min(yeta) max(yeta) min(xlambda) max(xlambda)])
 hold off
-exportgraphics(hfig,"./results/fig10rev.png",'Resolution',300);
+exportgraphics(hfig,"../results/fig10rev.png",'Resolution',300);
 close(hfig)
-%saveas(gcf,['./results/graph-' num2str(nSet) '-level-' num2str(iLv) '-' t '.png'])
+%saveas(gcf,['../results/graph-' num2str(nSet) '-level-' num2str(iLv) '-' t '.png'])
 mu
 gammas(:,1)
 num2str(gamma1,'%0.2e')
