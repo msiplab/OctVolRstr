@@ -1,8 +1,9 @@
 # OctVolRstr
 
-This repository contains supplemental materials for paper
+Supplemental materials are included for paper
 
-Ruiki Kobayashi, Genki Fujii, Yuta Yoshida, Takeru Ota, Fumiaki Nin, Hiroshi Hibino, Samuel Choi, Shunsuke Ono, Shogo Muramatsu,
+Ruiki Kobayashi, Genki Fujii, Yuta Yoshida, Takeru Ota, Fumiaki Nin, 
+Hiroshi Hibino, Samuel Choi, Shunsuke Ono, Shogo Muramatsu,
 "Sparsity-Aware OCT Volumetric Data Restoration Using Optical Synthesis Model," 
 IEEE Trans. on Computational Imaging, 2022 to appear
 
@@ -129,14 +130,14 @@ IEEE Trans. on Computational Imaging, 2022 to appear
    the above scripts during their execution.
 
 ## Instructions for setup:
-    Download the following ZIP file and put it in the same directory
-    with setup.m.
+    Download the following ZIP file and put it under the directory 'data'.
 
     (Limited to IEEE members)
     https://drive.google.com/file/d/13ZrAmw587vPUopEjsF6Se9sDbzMuwF3q/view?usp=sharing
 
-    Then, run setup on MATLAB
+    Then, move to directiory 'code' and run setup on MATLAB
 
+    >> cd code
     >> setup
 
 ## Instructions for experimental scripts:
@@ -144,10 +145,10 @@ IEEE Trans. on Computational Imaging, 2022 to appear
    Just input a main script name which begins by 'main_' on the MATLAB
    command window. For example,
  
-    >> main_simulation_etaLambda
+    >> main_sim_1d_paramswp_graph
 
 ## Output files:
-    The results is saved in folder "./results."
+    The results is saved in folder "../results."
     For the detail, please see the header comments on each script
 
 ## Contact Information:

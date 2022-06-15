@@ -15,8 +15,10 @@
 % http://msiplab.eng.niigata-u.ac.jp/
 
 %% Create RESULTS folder
-if ~exist("./results","dir")
-    mkdir("./results")
+if ~exist("../results","dir")
+    mkdir("../results")
+else
+    disp("../results exists.")
 end
 
 %% Download SaivDr package
@@ -41,6 +43,12 @@ cd(CURRENT_DIR)
 % https://drive.google.com/file/d/13ZrAmw587vPUopEjsF6Se9sDbzMuwF3q/view?usp=sharing
 %
 MATERIALS="materials.zip";
-if ~exist("materials","dir")
+CURRENT_DIR = pwd;
+DATA_DIR = "../data";
+if ~exist("../data/materials","dir")
+    cd(DATA_DIR)
     unzip(MATERIALS,".")
+    cd(CURRENT_DIR)
+else
+    disp("../data/materials exists.")
 end
