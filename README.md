@@ -1,11 +1,12 @@
 # OctVolRstr
 
-Supplemental materials are included for paper
+Supplemental materials are included for the following paper:
 
-Ruiki Kobayashi, Genki Fujii, Yuta Yoshida, Takeru Ota, Fumiaki Nin, 
-Hiroshi Hibino, Samuel Choi, Shunsuke Ono, Shogo Muramatsu,
-"Sparsity-Aware OCT Volumetric Data Restoration Using Optical Synthesis Model," 
-IEEE Trans. on Computational Imaging, 2022 to appear
+- Ruiki Kobayashi, Genki Fujii, Yuta Yoshida, Takeru Ota, Fumiaki Nin, 
+  Hiroshi Hibino, Samuel Choi, Shunsuke Ono, Shogo Muramatsu,
+  "Sparsity-Aware OCT Volumetric Data Restoration Using Optical Synthesis 
+  Model," IEEE Transactions on Computational Imaging, 
+  DOI: 10.1109/TCI.2022.3183396, 2022 to appear
 
 ## Description:
 
@@ -132,9 +133,8 @@ IEEE Trans. on Computational Imaging, 2022 to appear
 ## Instructions for setup:
     Download the following ZIP file and put it under the directory 'data'.
 
-    (Limited to IEEE members)
-    https://drive.google.com/file/d/13ZrAmw587vPUopEjsF6Se9sDbzMuwF3q/view?usp=sharing
-
+    /data/materials.zip at https://codeocean.com/capsule/9148728/
+    
     Then, move to directiory 'code' and run setup on MATLAB
 
     >> cd code
@@ -148,7 +148,7 @@ IEEE Trans. on Computational Imaging, 2022 to appear
     >> main_sim_1d_paramswp_graph
 
 ## Output files:
-    The results is saved in folder "../results."
+    The results is saved in folder "/results."
     For the detail, please see the header comments on each script
 
 ## Contact Information:
