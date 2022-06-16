@@ -6,7 +6,7 @@ setup
 %% Modeling process:
 % Evaluate the effect of broadening parameter to interference function
 % (Fig. 3)
-main_interfenrece_func 
+main_sim_1d_interference
 
 %% Simulation process:
 % Conduct 1-D simulation by sweeping parameters η and λ      

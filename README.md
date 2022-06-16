@@ -95,7 +95,7 @@ The latest version is maintained at the following site:
    tables used in the paper.
 
    Modeling process:
-    * main_interfenrece_func - Evaluate the effect of broadening parameter
+    * main_sim_1d_interference - Evaluate the effect of broadening parameter
       to interference function(Fig. 3)
 
    Simulation process:
