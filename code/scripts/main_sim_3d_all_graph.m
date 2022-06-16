@@ -130,6 +130,9 @@ for depthFreq = depthfactor
         +"-slope-"+num2str(slope)...
         +"-dfreq-"+num2str(depthFreq)
     targetfiles = string(ls(targetdir));
+    if length(targetfiles)==1
+        targetfiles = split(targetfiles);
+    end
     tfilename = targetfiles(contains(targetfiles,'tape_sim'));
     disp(tfilename)
     
@@ -179,6 +182,9 @@ for slope = slopefactor
         +"-slope-"+num2str(slope)...
         +"-dfreq-"+num2str(dfreq)
     targetfiles = string(ls(targetdir));
+    if length(targetfiles)==1
+        targetfiles = split(targetfiles);
+    end
     gfilename = targetfiles(contains(targetfiles,'glass_sim'));
     
     % Simulation configulation
@@ -230,6 +236,9 @@ for sigmaw = sigmawSet
         +"-slope-"+num2str(slope)...
         +"-dfreq-"+num2str(dfreq)
     targetfiles = string(ls(targetdir));
+    if length(targetfiles)==1
+        targetfiles=split(targefiles);
+    end
     rfilename = targetfiles(contains(targetfiles,'rest_sim'));
     targetfile = targetdir+"/"+rfilename;
     disp(targetfile)
