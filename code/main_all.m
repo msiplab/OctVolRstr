@@ -2,6 +2,7 @@
 %
 % Run all of the live scripts
 setup
+close all
 
 %% Modeling process:
 % Evaluate the effect of broadening parameter to interference function
@@ -58,4 +59,5 @@ main_exp_3d_waveform_graph
 main_exp_3d_rest_graph
 
 %
+close all
 revert
