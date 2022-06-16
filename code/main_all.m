@@ -1,6 +1,7 @@
 % MAIN_ALL
 %
 % Run all of the live scripts
+tic
 setup
 close all
 
@@ -61,3 +62,4 @@ main_exp_3d_rest_graph
 %
 close all
 revert
+toc
