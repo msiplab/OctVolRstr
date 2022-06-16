@@ -1,4 +1,4 @@
-# OctVolRstr
+# OctVolRstr Project
 
 Supplemental materials are included for the following paper:
 
@@ -6,7 +6,11 @@ Supplemental materials are included for the following paper:
   Hiroshi Hibino, Samuel Choi, Shunsuke Ono, Shogo Muramatsu,
   "Sparsity-Aware OCT Volumetric Data Restoration Using Optical Synthesis 
   Model," IEEE Transactions on Computational Imaging, 
-  DOI: 10.1109/TCI.2022.3183396, 2022 to appear
+  DOI: 10.1109/TCI.2022.3183396, to appear
+
+The latest version is maintained at the following site:
+
+	https://github.com/msiplab/OctVolRstr
 
 ## Description:
 
