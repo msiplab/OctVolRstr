@@ -37,7 +37,7 @@ dt = "2022-04-15-15-47";
 targetdir = "../data/materials/exp_wave_" + dt;
 
 %
-wfigname = @(x) "./results/fig13"+string(char(96+x))+"rev.png";
+wfigname = @(x) "../results/fig13"+string(char(96+x))+"rev.png";
 
 agamma = 1.7;
 %% Load results

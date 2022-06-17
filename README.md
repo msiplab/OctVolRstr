@@ -54,7 +54,7 @@ The latest version is maintained at the following site:
 
 ## Platform:
 
-   MATLAB R2022a
+   MATLAB R2021b/R2022a
 
 ## Environment:
 
