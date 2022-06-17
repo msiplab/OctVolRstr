@@ -137,7 +137,7 @@ The latest version is maintained at the following site:
 ## Instructions for setup:
     Download the following ZIP file and put it under the directory 'data'.
 
-    /data/materials.zip at https://codeocean.com/capsule/9148728/ 
+    /data/materials.zip at https://codeocean.com/capsule/5824110/ 
 
     Then, move to directiory 'code' and run setup on MATLAB
 
