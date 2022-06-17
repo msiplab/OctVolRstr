@@ -237,7 +237,7 @@ for sigmaw = sigmawSet
         +"-dfreq-"+num2str(dfreq)
     targetfiles = string(ls(targetdir));
     if length(targetfiles)==1
-        targetfiles=split(targefiles);
+        targetfiles=split(targetfiles);
     end
     rfilename = targetfiles(contains(targetfiles,'rest_sim'));
     targetfile = targetdir+"/"+rfilename;
