@@ -138,7 +138,6 @@ The latest version is maintained at the following site:
     Download the following ZIP file and put it under the directory 'data'.
 
     /data/materials.zip at https://codeocean.com/capsule/9148728/ 
-    (DOI: 10.24433/CO.9148728.v1)
 
     Then, move to directiory 'code' and run setup on MATLAB
 
