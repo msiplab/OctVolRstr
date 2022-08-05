@@ -128,10 +128,18 @@ kernelSize = size(pKernel);
 rdummy = randn(obsSize);
 dummy1_ = tmsrProc.step(rdummy,'Forward');
 dummy2_ = support.fcn_coherence3d(rdummy,[pScale pSigmaxy pSigmaz pFreq pB4Sinc],'Forward');
-assert(norm(dummy1_-dummy2_,'fro')<1e-15,'Not met')
+if isMATLABReleaseOlderThan("R2022a")
+    assert(norm(dummy1_(:)-dummy2_(:))<1e-15,'Not met')
+else
+    assert(norm(dummy1_-dummy2_,'fro')<1e-15,'Not met')
+end
 dummy1_ = tmsrProc.step(rdummy,'Adjoint');
 dummy2_ = support.fcn_coherence3d(rdummy,[pScale pSigmaxy pSigmaz pFreq pB4Sinc],'Adjoint');
-assert(norm(dummy1_-dummy2_,'fro')<1e-15,'Not met')
+if isMATLABReleaseOlderThan("R2022a")
+    assert(norm(dummy1_(:)-dummy2_(:))<1e-15,'Not met')
+else
+    assert(norm(dummy1_-dummy2_,'fro')<1e-15,'Not met')
+end
 %% Restoration settings
 
 nLevels = 2;
