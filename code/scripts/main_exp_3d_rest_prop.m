@@ -324,7 +324,7 @@ disp(pdshshc)
 id = 'mouse';
 for itr = 1:maxIter
     tic
-    uEst = shshc.step();
+    uEst = pdshshc.step();
     if isVerbose && itr==1
         lambda = pdshshc.LambdaCompensated;
         eta   = pdshshc.EtaCompensated;
