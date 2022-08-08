@@ -36,7 +36,8 @@
 
 S = load('../data/materials/glass1.mat','ObsData');
 ObsData = S.ObsData;
-dtsa = "2022-04-14-11-45";
+%dtsa = "2022-04-14-11-45";
+dtsa = "2022-04-16-21-20";
 S = load("../data/materials/exp_smpadj_"+dtsa+"/adjustFunc","depthEst");
 depthEst = S.depthEst;
 disp(depthEst)
